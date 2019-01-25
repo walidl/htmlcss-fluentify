@@ -192,6 +192,7 @@ text-align: center;
 
  #piano .row .image{
   height: 45%;
+  position: relative;
 }
 
 #piano .row .tit{
@@ -211,7 +212,22 @@ text-align: center;
 }
 
 #piano .row  .image > img{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 30px;
+}
+
+#piano .left .image > img{
   width: 40%;
+}
+
+#piano .center .image > img{
+  width: 65%;
+}
+
+#piano .right .image > img{
+  width: 45%;
 }
 
 .tit h2{
@@ -222,7 +238,7 @@ text-align: center;
 
 .desc p{
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 25px;
   color: #999;
   padding: 10px 20px;
