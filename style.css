@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+  width: 80%;
+  height: 100%;
+  margin:auto;
+  border: 1px solid black;
+
+}
+
+nav{
+  height: 80px;
+  background-color: #0d325a;
+  font-size: 12px;
+}
+
+nav .bar{
+  line-height: 80px;
+}
+
+.bar-left{
+  float:left;
+  color: white;
+  width: 60%;
+
+}
+
+.bar-right{
+  float:right;
+  width: 40%;
+  /* height: 100%; */
+  text-align: right
+}
+
+/* BAR LEFT */
+
+.bar-left >*{
+  float: left;
+}
+
+.bar-left .logo{
+  position: relative;
+  width: 20%;
+  /* height: 100%; */
+  padding-top: 10px;
+}
+
+.bar-left ul{
+  list-style-type: none;
+  width: 80%;
+}
+.bar-left ul li{
+  float:left;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+/* BAR RIGHT */
+.bar-right >*{
+  margin-left: 15px;
+}
+
+/* GREY SECTION */
+
+
+.grey{
+  background-color: #f9f9f9;
+  height: 155px;
+  text-align: center;
+}
+
+.grey .container{
+  position: relative;
+}
+
+.grey .container div{
+  position: absolute;
+  width: 100%;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+/* PIANO FIRST WHITE   */
+
+.white{
+  height: 500px;
+  margin:5px 0;
+}
+
+.white .row{
+height:100%;
+text-align: center;
+}
+
+#piano .row > *{
+  width: 33.3333%;
+  height: 100%;
+  float:left;
+  background-color: red;
+  border: 1px solid black;
+}
+
+ #piano .row .image{
+  height: 40%;
+}
+
+#piano .row .tit{
+  height: 15%;
+}
+#piano .row .desc{
+  height: 45%;
+}
+
+#piano .row  .image > img{
+  width: 40%;
+}
+
+/* TEST */
+
+#test .row > *{
+  width: 50%;
+  height: 100%;
+  float:left;
+  background-color: orange;
+  border: 1px solid black;
+}
