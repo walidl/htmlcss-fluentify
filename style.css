@@ -24,16 +24,22 @@ button{
 
 .blue{
   background-color: #0d325a;
+  height: 425px;
 }
 
 .grey{
   background-color: #f9f9f9;
 }
 
+.white{
+  height: 500px;
+  margin:5px 0;
+}
+
 #help-btn{
   position:fixed;
   bottom:0;
-  right:95px;
+  right:85px;
   width: 60px;
   height: 40px;
   border-top-left-radius: 7px;
@@ -154,7 +160,6 @@ nav .bar{
 /* FIRST BLOCK */
 
 #first-block{
-  height: 425px;
   position: relative;
 }
 
@@ -221,10 +226,7 @@ nav .bar{
 
 /* PIANO FIRST WHITE   */
 
-.white{
-  height: 500px;
-  margin:5px 0;
-}
+
 
 .white .row{
 height:100%;
@@ -440,9 +442,9 @@ text-decoration: underline;
 
 .dropItem{
   display: block;
-  background-color: rgba(8, 32, 67,0.8);
+  background-color: rgba(8, 32, 67,0.5);
   border: none;
-  color:white;
+  color:whitesmoke;
   border-radius: 5px;
   width: 300px;
   height: 50px;
@@ -456,9 +458,113 @@ text-decoration: underline;
 .dropItem span{
   display: inline-block;
   width: 10%;
-
 }
 
 .dropItem:hover{
   background-color: #7fb802;
+}
+
+/* RANDOM BLUE */
+
+
+
+/* STRUTTURA */
+
+#struttura .titolo{
+  text-align: center;
+  height: 20%;
+  position: relative;
+}
+
+#struttura .titolo h2{
+  color: #4a4a4a;
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+#struttura .row{
+  height: 70%;
+}
+
+#struttura .row > div{
+  width: 33.3333%;
+  float: left;
+  height: 100%;
+  text-align: left;
+  padding: 0 20px;
+}
+
+#struttura .log{
+  height: 30%;
+  position: relative;
+  padding: 10px 0;
+}
+
+#struttura .desc{
+  height: 45%;
+  padding-top: 20px;
+  border-bottom: 5px solid;
+}
+
+#struttura .link{
+  height: 20%;
+  padding: 20px 0;
+}
+
+#struttura .log img{
+  height: 45%;
+  position: absolute;
+  bottom:0;
+}
+
+#struttura .desc h4{
+  font-size: 18px;
+  opacity: .8;
+  margin-bottom: 5px;
+}
+
+#struttura .desc p{
+  font-size: 15px;
+  color: #999;
+  padding-left: 0;
+  line-height: 20px;
+}
+
+#struttura .link a{
+  font-weight: 600;
+}
+
+/* ------------sides *-----------------/
+
+/* left */
+
+#struttura .left .desc{
+  border-color:#98c8f8;
+}
+
+#struttura .left .link a{
+  color:#98c8f8;
+}
+
+/* center */
+
+#struttura .center .desc{
+  border-color:#f8b71c;
+}
+
+#struttura .center .link a{
+  color:#f8b71c;
+}
+
+/* right */
+
+#struttura .right .desc{
+border-color:#7fb802;
+}
+
+#struttura .right .link a{
+color:#7fb802;
 }
