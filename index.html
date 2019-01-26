@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png"  href="img/favicon.ico">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <button  id="footButton"type="button" name="button">HELP</button>
+    <button  id="help-btn"type="button" name="button">HELP</button>
 
     <!-- NAV -->
 
@@ -34,9 +36,22 @@
       </div>
     </nav>
 
+    <!-- FIRST BLOCK -->
+
+    <section id="first-block" class="blue clear">
+      <img src="img/header.png">
+      <div class="container">
+        <div class="cont">
+          <h1>Scegli l'inglese studiato per<br>i professionisti</h1>
+          <button type="button" name="button">STRUTTURA UN PIANO</button>
+        </div>
+
+      </div>
+    </section>
+
     <!-- GREY SECTION -->
 
-    <section class="grey">
+    <section  id="first-grey" class="grey">
       <div class="container">
         <div>
         <p>Le scuole di lingua tradizionali non sono efficaci</p>
@@ -108,5 +123,28 @@
       </div>
     </div>
     </section>
+
+    <!-- STRUTTURA PIANO -->
+
+    <section id="struttura-piano" class="grey">
+      <div class="container clear">
+        <div class="tit">
+          <h3>Struttura un piano</h3>
+        </div>
+        <div class="form">
+          <h3>Sono</h3>
+          <div class="dropdown">
+            <button  id ="selez" type="button" name="button">Seleziona&emsp;&emsp;&emsp;<i class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <button  class="dropItem" type="button" name="button"><span><i class="fas fa-graduation-cap"></i></span> uno studente</button>
+              <button  class="dropItem" type="button" name="button"><span><i class="fas fa-briefcase"></i></span> un professionista </button>
+              <button  class="dropItem" type="button" name="button"><span><i class="fas fa-city"></i></span> un'azienda</button>
+            </div>
+          </div>
+          <button id="visual"type="button" name="button">Visualizza il tuo piano</button>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>

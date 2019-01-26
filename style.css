@@ -5,6 +5,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+button{
+  cursor: pointer;
+}
+
 .clear:after{
   content: "";
   display: table;
@@ -15,9 +19,18 @@
   width: 80%;
   height: 100%;
   margin:auto;
+  /* border:1px solid black; */
 }
 
-#footButton{
+.blue{
+  background-color: #0d325a;
+}
+
+.grey{
+  background-color: #f9f9f9;
+}
+
+#help-btn{
   position:fixed;
   bottom:0;
   right:95px;
@@ -28,10 +41,10 @@
   background-color: #009900;
   color: white;
   border: none;
-  cursor: pointer;
+  z-index: 2;
 }
 
-#footButton:hover{
+#help-btn:hover{
   height: 45px;
   padding-bottom: 5px;
 }
@@ -82,6 +95,7 @@ nav .bar{
  top:50%;
  left:50%;
  transform: translate(-60%,-65%);
+ cursor: pointer;
 }
 
 .bar-left ul{
@@ -110,7 +124,6 @@ nav .bar{
 .bar-right button{
   font-size: 12px;
   font-weight: 600;
-  cursor: pointer;
 }
 
 #btt1{
@@ -138,30 +151,70 @@ nav .bar{
   width:150px;
 }
 
+/* FIRST BLOCK */
+
+#first-block{
+  height: 425px;
+  position: relative;
+}
+
+#first-block > img{
+  position: absolute;
+  right:0;
+}
+
+#first-block .cont {
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#first-block .cont h1{
+  color: white;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 55px;
+  margin-bottom: 35px;
+}
+
+#first-block .cont button{
+  background-color: #7fb802;
+  border: none;
+  color:white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 44px;
+  width:180px;
+}
+
+
+
 /* GREY SECTION */
 
-.grey{
-  background-color: #f9f9f9;
+#first-grey{
   height: 155px;
   text-align: center;
 }
 
-.grey .container{
+#first-grey .container{
   position: relative;
 }
 
-.grey .container div{
+#first-grey .container div{
   position: absolute;
   width: 100%;
   top:50%;
   transform: translateY(-50%);
 }
 
-.grey .container div p:first-child{
+#first-grey .container div p:first-child{
   font-size:24px;
   margin-bottom: 15px;
 }
-.grey .container div p:nth-child(2){
+
+#first-grey .container div p:nth-child(2){
   font-size: 18px;
   color: #999
 }
@@ -178,7 +231,7 @@ height:100%;
 text-align: center;
 }
 
-#piano{
+#piano .container{
   border-bottom: 1px solid #C3C4C5;
 }
 
@@ -230,7 +283,7 @@ text-align: center;
   width: 45%;
 }
 
-.tit h2{
+#piano .tit h2{
   font-size: 22px;
   font-weight: 500;
   color: #7fb802;
@@ -293,4 +346,119 @@ text-align: center;
 #test article a{
 color: #98c8f8;
 text-decoration: underline;
+}
+
+/* STRUTTURA PIANO */
+
+#struttura-piano{
+  height: 130px;
+}
+
+#struttura-piano .container{
+  line-height: 130px
+}
+
+#struttura-piano  .container > div{
+  width: 50%;
+  height: 100%
+}
+
+#struttura-piano  .container h3{
+  display: inline-block;
+  font-weight: 600;
+}
+
+#struttura-piano  .container .tit{
+  float:left;
+}
+
+#struttura-piano .tit h3{
+  color: #4a4a4a;
+  font-size: 28px;
+
+}
+
+#struttura-piano  .container .form{
+  float: right;
+  text-align: right;
+  /* background-color: aqua; */
+}
+
+#struttura-piano .form > h3{
+  color: #b2b2b2;
+  font-size: 26px;
+
+}
+
+#selez{
+  background: none;
+  height: 55px;
+  color: rgba(0,0,0,0.5);
+  font-weight: 600;
+  font-size: 22px;
+  padding: 0 15px;
+  border: none;
+  border-bottom: 3px solid #DCDCDC;
+  margin-left: 10px;
+  position:relative;
+  bottom: 3px;
+}
+
+#visual{
+  background-color: #7fb802;
+  border: none;
+  color:white;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  height: 44px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top:100px;
+  right: 0;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown:hover  .fa-caret-down {
+  transform: rotate(180deg);
+}
+
+.dropItem{
+  display: block;
+  background-color: rgba(8, 32, 67,0.8);
+  border: none;
+  color:white;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.dropItem span{
+  display: inline-block;
+  width: 10%;
+
+}
+
+.dropItem:hover{
+  background-color: #7fb802;
 }
