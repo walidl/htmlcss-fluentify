@@ -97,11 +97,11 @@ nav .bar{
 }
 
 .bar-left .logo img{
- position: absolute;
- top:50%;
- left:50%;
- transform: translate(-60%,-65%);
- cursor: pointer;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-60%,-65%);
+  cursor: pointer;
 }
 
 .bar-left ul{
@@ -194,8 +194,6 @@ nav .bar{
   width:180px;
 }
 
-
-
 /* GREY SECTION */
 
 #first-grey{
@@ -226,11 +224,9 @@ nav .bar{
 
 /* PIANO FIRST WHITE   */
 
-
-
 .white .row{
-height:100%;
-text-align: center;
+  height:100%;
+  text-align: center;
 }
 
 #piano .container{
@@ -245,9 +241,9 @@ text-align: center;
   text-align: center;
 }
 
- #piano .row .image{
-  height: 45%;
-  position: relative;
+#piano .row .image{
+height: 45%;
+position: relative;
 }
 
 #piano .row .tit{
@@ -346,8 +342,8 @@ text-align: center;
 }
 
 #test article a{
-color: #98c8f8;
-text-decoration: underline;
+  color: #98c8f8;
+  text-decoration: underline;
 }
 
 /* STRUTTURA PIANO */
@@ -377,13 +373,11 @@ text-decoration: underline;
 #struttura-piano .tit h3{
   color: #4a4a4a;
   font-size: 28px;
-
 }
 
 #struttura-piano  .container .form{
   float: right;
   text-align: right;
-  /* background-color: aqua; */
 }
 
 #struttura-piano .form > h3{
@@ -562,9 +556,112 @@ text-decoration: underline;
 /* right */
 
 #struttura .right .desc{
-border-color:#7fb802;
+  border-color:#7fb802;
 }
 
 #struttura .right .link a{
-color:#7fb802;
+  color:#7fb802;
+}
+
+/* FAQ */
+
+#faq{
+  height: 135px;
+}
+
+#faq .container{
+  position: relative;
+}
+
+#faq  .container > div{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+#faq h3{
+  color: #fff;
+  font-size: 1.75rem
+}
+
+#faq h3 a{
+  color:#f0ad4e;
+  text-decoration: none;
+}
+
+#faq h3 a:hover{
+  color:#EC971F;
+  text-decoration:underline;
+}
+
+#faq h5{
+  font-size: 18px;
+  font-weight: 400;
+  opacity: .5;
+  color: white;
+}
+
+/* FOOTER */
+
+footer{
+  height: 400px;
+  background-color: #17406b;
+}
+
+footer .container{
+  padding-top: 5%;
+}
+
+/*  left list */
+
+footer .list{
+  float: left;
+}
+
+footer .list h5{
+  color:white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+footer .list ul{
+  list-style: none;
+}
+
+footer .list li{
+  margin-bottom: 10px;
+}
+
+footer .list li a{
+  text-decoration: none;
+  color: white;
+  opacity: .5;
+}
+
+footer .list li a{
+  text-decoration: none;
+  color: white;
+  opacity: .5;
+}
+
+/* right */
+
+footer .right{
+  float:right;
+  text-align: right;
+  width:30%;
+  margin-right: 20%;
+  color: white;
+}
+
+footer .right > *{
+  margin-bottom: 10%;
+}
+
+footer .right > h4{
+  font-size: 20px;
+}
+
+footer .right > p{
+  opacity: .7;
+  font-size: 16px;
 }
